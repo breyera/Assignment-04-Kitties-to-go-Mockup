@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   font: normal 16px 'Roboto', sans-serif;
   background-color: RGB(255, 255, 255);
-  line-height: 1.6em;
+  line-height: 2em;
   margin-top: 80px;
   margin: 0;
   padding: inherit;
@@ -16,7 +16,7 @@ html, body {
 }
 
 p {
-  font: normal 14px 'Roboto', sans-serif;
+  font: normal 'Roboto', sans-serif;
 }
 
 ul {
@@ -41,14 +41,6 @@ a {
   color: #3A77AC;
   margin-left: 15px;
   transition: all .3s;
-}
-
-a:link {
-  color: inherit;
-}
-
-a:visited {
-  color: inherit;
 }
 
 .content {
@@ -86,6 +78,8 @@ a:visited {
   font-weight: 500;
   font-size: 2em;
   font-style: italic;
+  min-width: 400px;
+  max-width: 250px;
 }
 /* end top banner */
 
@@ -131,6 +125,8 @@ nav li a {
 }
 /* end nav */
 
+
+
 /* main content */
 .content {
   padding-top: 50px;
@@ -158,7 +154,41 @@ nav li a {
   text-align: left;
 }
 
+.btn {
+  color: rgb(44, 154, 183)
+}
 
+.first-p {
+  font-size: 20px;
+  color: rgb(34, 154, 184);
+  font-weight: bold;
+}
+
+.quote {
+  font-size: 22px;
+  color: rgb(34, 154, 184);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.content .p {
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+.content h3 {
+  line-height: 0;
+  font-weight: 950;
+}
+
+.content .week {
+  padding-top: 3em;
+}
+.content .chew {
+  padding-top: 1em;
+}
+
+/* end main content */
 
 
 
@@ -171,7 +201,6 @@ nav li a {
 }
 
 .footer .footer-content {
-  height: 350px;
   width: 100%;
   text-align: center;
   position: absolute;
@@ -181,8 +210,21 @@ nav li a {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
+}
+
+.footer-text {
+  min-width: 450px;
+  max-width: 250px;
+}
+
+.footer a:visited {
+  color: white;
+}
+
+.footer a:hover {
+  color: white;
+  margin-left: 15px;
+  transition: all .3s;
 }
 
 .forward-slash li:before {
@@ -194,4 +236,10 @@ nav li a {
   content: "";
   padding-right: 0;
 }
+
+.cat-logo {
+  top: 6rem;
+}
+
+.footer-text {}
 /* end footer */
