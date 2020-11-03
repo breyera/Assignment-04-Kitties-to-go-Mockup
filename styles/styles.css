@@ -6,6 +6,7 @@ html, body {
   margin-top: 80px;
   margin: 0;
   padding: inherit;
+  overflow-x: hidden;
 }
 
 .main {
@@ -51,7 +52,7 @@ a:visited {
 }
 
 .content {
-  width: 80%;
+  width: 60%;
   margin: auto;
   min-height: 100%;
 }
@@ -59,12 +60,15 @@ a:visited {
 /* top banner */
 .banner-container {
   position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
   text-align: center;
   color: white;
+  background-color: rgb(235, 235, 235);
 }
 
 .top-banner {
-  width: 80%;
+  width: 60%;
   margin: auto;
   position: absolute;
   top: 80px;
@@ -75,49 +79,87 @@ a:visited {
 
 .banner-container .top-banner h1 {
   font-weight: 900;
-  font-size: 45px;
+  font-size: 4em;
 }
 
 .banner-container .top-banner h2 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2em;
   font-style: italic;
 }
 /* end top banner */
 
+
 /* navigation bar */
-header {
-  background-color: grey;
+nav li {
+  padding: 0 5px 0 5px;
   position: relative;
-  top: 0;
-  left: 0;
+  left: 18.5%;
+}
+
+nav li a:after{
+  content: " / ";
+  position: absolute;
   right: 0;
-  height: 80px;
-  display: flex;
-  align-items: center;
+  top : 15px;
+}
+
+nav li:last-child a:after{
+    display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(235, 235, 235);
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
   color: black;
-}
-
-header {
-  display: inline;
-}
-
-header li {
-  margin: 5px;
-  padding: 1rem;
-}
-
-header li a {
-  color: black;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
+/* end nav */
 
-.topnav {
-  width: 100%;
-  max-width: 920px;
-  margin: 10;
-  padding-left: 8%;
+/* main content */
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+
+.main-content-flex {
+  display: flex;
+}
+
+.main-content-flex .main-content {
+  flex: 3;
+  max-width: 600px;
+}
+
+.main-content-sidebar {
+  flex: 1;
+  border: 0px 20px 0px 20px none;
+  max-width: 250px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
+  text-align: left;
+}
+
+
+
 
 
 /* footer */
