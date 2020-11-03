@@ -86,7 +86,6 @@ a {
 
 /* navigation bar */
 nav li {
-  padding: 0 5px 0 5px;
   position: relative;
   left: 18.5%;
 }
@@ -95,7 +94,6 @@ nav li a:after{
   content: " / ";
   position: absolute;
   right: 0;
-  top : 15px;
 }
 
 nav li:last-child a:after{
@@ -113,15 +111,21 @@ nav ul {
 }
 
 nav li {
-  float: left;
+  padding: 1rem;
 }
 
 nav li a {
-  display: block;
+  display: inline;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1rem;
   text-decoration: none;
+}
+
+nav li:hover {
+  background-color: grey;
+  border-radius: 5px;
+  border: 3px none;
 }
 /* end nav */
 
@@ -186,6 +190,10 @@ nav li a {
 }
 .content .chew {
   padding-top: 1em;
+}
+
+.content .cut-away {
+  color: rgb(44, 154, 183);
 }
 
 /* end main content */
