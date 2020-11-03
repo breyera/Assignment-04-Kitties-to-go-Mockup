@@ -57,6 +57,67 @@ a:visited {
 }
 
 /* top banner */
+.banner-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-banner {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+
+.banner-container .top-banner h1 {
+  font-weight: 900;
+  font-size: 45px;
+}
+
+.banner-container .top-banner h2 {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+}
+/* end top banner */
+
+/* navigation bar */
+header {
+  background-color: grey;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+header {
+  display: inline;
+}
+
+header li {
+  margin: 5px;
+  padding: 1rem;
+}
+
+header li a {
+  color: black;
+  text-decoration: none;
+}
+
+.topnav {
+  width: 100%;
+  max-width: 920px;
+  margin: 10;
+  padding-left: 8%;
+}
 
 
 /* footer */
