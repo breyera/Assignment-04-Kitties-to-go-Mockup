@@ -225,6 +225,10 @@ nav li:hover {
   max-width: 250px;
 }
 
+.footer a {
+  color: white;
+}
+
 .footer a:visited {
   color: white;
 }
